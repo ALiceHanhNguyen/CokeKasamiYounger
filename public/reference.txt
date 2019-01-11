@@ -1,0 +1,157 @@
+toi co hoa be ban ben minh
+S -> NP VP
+NP -> toi
+NP -> NN NP
+NP -> NN PP
+NP -> minh
+VP -> VB NP
+PP -> IN NP
+VB -> co
+IN -> ben
+NN -> hoa
+NN -> be
+NN -> ban
+S -> NP VP\r\nNP -> toi\r\nNP -> NN NP\r\nNP -> NN PP\r\nNP -> minh\r\nVP -> VB NP\r\nPP -> IN NP\r\nVB -> co\r\nIN -> ben\r\nNN -> hoa\r\nNN -> be\r\nNN -> ban
+
+hoa hieu ca nhung dieu toi chang noi
+S -> NP VP
+NP -> hoa
+NP -> DT NP
+NP -> NN NP
+NP -> Q NP
+NP -> NN VP
+VP -> VB NP
+VP -> ADV VP
+VP -> noi
+VB -> hieu
+DT -> ca
+Q -> nhung
+ADV -> chang
+NN -> dieu
+NN -> toi
+S -> NP VP\r\nNP -> hoa\r\nNP -> DT NP\r\nNP -> NN NP\r\nNP -> Q NP\r\nNP -> NN VP\r\nVP -> VB NP\r\nVP -> ADV VP\r\nVP -> noi\r\nVB -> hieu\r\nDT -> ca\r\nQ -> nhung\r\nADV -> chang\r\nNN -> dieu\r\nNN -> toi
+
+hoa tuong vi cua nhung ngay xua
+S -> NP VP
+NP -> NN NP
+NP -> vi
+NP -> Q NP
+NP -> NN ADJ
+VP -> VB NP
+VB -> cua
+Q -> nhung
+ADJ -> xua
+NN -> hoa
+NN -> tuong
+NN -> ngay
+S -> NP VP\r\nNP -> NN NP\r\nNP -> vi\r\nNP -> Q NP\r\nNP -> NN ADJ\r\nVP -> VB NP\r\nVB -> cua\r\nQ -> nhung\r\nADJ -> xua\r\nNN -> hoa\r\nNN -> tuong\r\nNN -> ngay
+
+toi van nho mot mau may phieu lang
+S -> NP VP
+NP -> toi
+NP -> Q NP
+NP -> NN NP
+NP -> NN ADJ
+VP -> ADV VP
+VP -> VB NP
+ADJ -> JJ JJ
+ADV -> van
+VB -> nho
+Q -> mot
+JJ -> phieu
+JJ -> lang
+NN -> mau
+NN -> may
+S -> NP VP\r\nNP -> toi\r\nNP -> Q NP\r\nNP -> NN NP\r\nNP -> NN ADJ\r\nVP -> ADV VP\r\nVP -> VB NP\r\nADJ -> JJ JJ\r\nADV -> van\r\nVB -> nho\r\nQ -> mot\r\nJJ -> phieu\r\nJJ -> lang\r\nNN -> mau\r\nNN -> may
+
+ten minh ai goi sau vom la
+S -> NP VP
+NP -> NN NP
+NP -> ai
+NP -> la
+VP -> VB PP
+PP -> IN NP
+VB -> goi
+IN -> sau
+NN -> ten
+NN -> minh
+NN -> vom
+S -> NP VP\r\nNP -> NN NP\r\nNP -> ai\r\nNP -> la\r\nVP -> VB PP\r\nPP -> IN NP\r\nVB -> goi\r\nIN -> sau\r\nNN -> ten\r\nNN -> minh\r\nNN -> vom
+
+nhung chang trai dang do tuoi hai muoi
+S -> NP VP
+NP -> Q NP
+NP -> NN NP
+NP -> trai
+NP -> muoi
+VP -> VB NP
+VB -> dang
+Q -> nhung
+Q -> hai
+NN -> chang
+NN -> do
+NN -> tuoi
+S -> NP VP\r\nNP -> Q NP\r\nNP -> NN NP\r\nNP -> trai\r\nNP -> muoi\r\nVP -> VB NP\r\nVB -> dang\r\nQ -> nhung\r\nQ -> hai\r\nNN -> chang\r\nNN -> do\r\nNN -> tuoi
+
+nguoi yeu nguoi yeu hoa co dat dai
+S -> NP VP
+NP -> nguoi
+NP -> NN VP
+NP -> NN NP
+NP -> dai
+VP -> VB NP
+VB -> yeu
+NN -> nguoi
+NN -> hoa
+NN -> co
+NN -> dat
+S -> NP VP\r\nNP -> nguoi\r\nNP -> NN VP\r\nNP -> NN NP\r\nNP -> dai\r\nVP -> VB NP\r\nVB -> yeu\r\nNN -> nguoi\r\nNN -> hoa\r\nNN -> co\r\nNN -> dat
+
+nhung cau chuyen xoay quanh mua hai qua
+S -> NP VP
+NP -> Q NP
+NP -> NN NP
+NP -> chuyen
+NP -> qua
+NP -> NN VP
+VP -> VB ADJ
+VP -> VB NP
+ADJ -> JJ NP
+Q -> nhung
+JJ -> quanh
+VB -> hai
+VB -> xoay
+NN -> cau
+NN -> mua
+S -> NP VP\r\nNP -> Q NP\r\nNP -> NN NP\r\nNP -> chuyen\r\nNP -> qua\r\nNP -> NN VP\r\nVP -> VB ADJ\r\nVP -> VB NP\r\nADJ -> JJ NP\r\nQ -> nhung\r\nJJ -> quanh\r\nVB -> hai\r\nVB -> xoay\r\nNN -> cau\r\nNN -> mua
+
+mot dong song lang chay tu xa
+S -> NP VP
+NP -> Q NP
+NP -> NN NP
+NP -> NN ADJ
+NP -> IN NP
+NP -> xa
+VP -> VB NP
+Q -> mot
+ADJ -> lang
+VB -> chay
+IN -> tu
+NN -> dong
+NN -> song
+S -> NP VP\r\nNP -> Q NP\r\nNP -> NN NP\r\nNP -> NN ADJ\r\nNP -> IN NP\r\nNP -> xa\r\nVP -> VB NP\r\nQ -> mot\r\nADJ -> lang\r\nVB -> chay\r\nIN -> tu\r\nNN -> dong\r\nNN -> song
+
+thung lung vang suong bay day cua so
+S -> NP VP
+NP -> NN NP
+NP -> suong
+NP -> so
+VP -> VB ADV
+ADV -> JJ NP
+VB -> bay
+JJ -> day
+NN -> thung
+NN -> lung
+NN -> vang
+NN -> cua
+S -> NP VP\r\nNP -> NN NP\r\nNP -> suong\r\nNP -> so\r\nVP -> VB ADV\r\nADV -> JJ NP\r\nVB -> bay\r\nJJ -> day\r\nNN -> thung\r\nNN -> lung\r\nNN -> vang\r\nNN -> cua

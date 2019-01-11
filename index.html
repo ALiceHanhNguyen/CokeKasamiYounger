@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CKY - Nguyen Thi Hong Hanh</title>
+    <meta name="author" content="Nguyen Thi Hong Hanh - CH1701020">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="public/js/grammar.js"></script>
+    <script type="text/javascript" src="public/js/cky.js"></script>
+    <link rel="stylesheet" href="public/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col text-center"><h2>NGÔN NGỮ HỌC MÁY TÍNH - CKY ALTHOGYTHOM</h2></div>
+        </div>
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col text-center"><h4>Học viên: Nguyễn Thị Hồng Hạnh - CH1701020</h4></div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <div class="card-body">
+              <p>
+                <span class="label text-primary">10 Sample Sentences</span>
+                <br>
+                <input type="button" class="form-control sentenses-list" id="sentence_1" onclick="choosen_sentence(sentence_1.value, 1)" value="toi co hoa be ban ben minh">
+                <input type="button" class="form-control sentenses-list" id="sentence_2" onclick="choosen_sentence(sentence_2.value, 2)" value="hoa hieu ca nhung dieu toi chang noi">
+                <input type="button" class="form-control sentenses-list" id="sentence_3" onclick="choosen_sentence(sentence_3.value, 3)" value="hoa tuong vi cua nhung ngay xua">
+                <input type="button" class="form-control sentenses-list" id="sentence_4" onclick="choosen_sentence(sentence_4.value, 4)" value="toi van nho mot mau may phieu lang">
+                <input type="button" class="form-control sentenses-list" id="sentence_5" onclick="choosen_sentence(sentence_5.value, 5)" value="ten minh ai goi sau vom la">
+                <input type="button" class="form-control sentenses-list" id="sentence_6" onclick="choosen_sentence(sentence_6.value, 6)" value="nhung chang trai dang do tuoi hai muoi">
+                <input type="button" class="form-control sentenses-list" id="sentence_7" onclick="choosen_sentence(sentence_7.value, 7)" value="nguoi yeu nguoi yeu hoa co dat dai">
+                <input type="button" class="form-control sentenses-list" id="sentence_8" onclick="choosen_sentence(sentence_8.value, 8)" value="nhung cau chuyen xoay quanh mua hai qua">
+                <input type="button" class="form-control sentenses-list" id="sentence_9" onclick="choosen_sentence(sentence_9.value, 9)" value="mot dong song lang chay tu xa">
+                <input type="button" class="form-control sentenses-list" id="sentence_10" onclick="choosen_sentence(sentence_10.value, 10)" value="thung lung vang suong bay day cua so">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <div class="card-body">
+              <p>
+                <span class="label text-primary">Sentence Input</span>
+                <br>
+                <input type="text" class="form-control" id="idsen" value="" size="80">
+              </p>
+              <p>
+                <span class="label text-primary">Thời gian cập nhật kết quả <i>(ms)</i></span>
+                <br>
+                <input type="text" class="form-control" id="idupdint" value="50" size="3">
+              </p>
+              <p>
+                <input type="button" class="btn btn-primary" value="Start" onclick="UPDATE_INTERVAL = idupdint.value; do_parse();">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card flex-md-row mb-4 shadow-sm">
+            <div class="card-body">
+              <span class="label text-primary">Grammar <i>(theo ngữ pháp CNF)</i></span>
+              <br>
+              <textarea class="form-control" id="idgram" cols="70" rows="13"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="cky_output" tabindex="1" style="display:none" onclick="pause_resume_animation()" onkeydown="chart_key_handler(event)">
+            <table id="columnsCount" width="3%" height="100%" bgcolor="CC99CC" align="left"></table>
+            <table id="tsentence" width="97%" height="5%" bgcolor="99FF66"></table>
+            <table id="rowsCount" width="97%" height="3%" bgcolor="CC99CC"></table>
+            <table id="tchart" width="97%" height="90%" border="1" align="left"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
